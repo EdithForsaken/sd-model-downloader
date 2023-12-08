@@ -18,11 +18,11 @@ addnet_path = None
 md_path = scripts.basedir()
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--ckpt-dir', type=str, default=os.path.join(models_path, 'Stable-diffusion'))
+parser.add_argument('--ckpt-dir', type=str, default=os.path.join(models_path, 'Stable-diffusion', 'tmp_models'))
 parser.add_argument('--vae-dir', type=str, default=os.path.join(models_path, 'VAE'))
 parser.add_argument('--embeddings-dir', type=str, default=os.path.join(data_path, 'embeddings'))
 parser.add_argument('--hypernetwork-dir', type=str, default=os.path.join(models_path, 'hypernetworks'))
-parser.add_argument('--lora-dir', type=str, default=os.path.join(models_path, 'Lora'))
+parser.add_argument('--lora-dir', type=str, default=os.path.join(models_path, 'Lora', 'tmp_Lora'))
 parser.add_argument('--lyco-dir', type=str, default=os.path.join(models_path, 'LyCORIS'))
 args, _ = parser.parse_known_args()
 
