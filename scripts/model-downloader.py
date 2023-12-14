@@ -23,7 +23,7 @@ parser.add_argument('--vae-dir', type=str, default=os.path.join(models_path, 'VA
 parser.add_argument('--embeddings-dir', type=str, default=os.path.join(data_path, 'embeddings'))
 parser.add_argument('--hypernetwork-dir', type=str, default=os.path.join(models_path, 'hypernetworks'))
 parser.add_argument('--lora-dir', type=str, default=os.path.join(models_path, 'Lora', 'tmp_Lora'))
-parser.add_argument('--lyco-dir', type=str, default=os.path.join(models_path, 'LyCORIS'))
+parser.add_argument('--lora-dir', type=str, default=os.path.join(models_path, 'Lora', 'tmp_Lora'))
 args, _ = parser.parse_known_args()
 
 if not os.path.exists(os.path.join(sd_path, 'html', 'card-no-preview.png')):
